@@ -183,7 +183,7 @@ obo:NCIT_c49839 a owl:Class ;
 
 obo:SDGIO_00020001 a owl:Class ;
     rdfs:label "Indicator 291" ;
-    skos:definition "Proportion of population living below the national poverty line, by sex and age"
+    skos:definition "Proportion of population living below the national poverty line, by sex and age" ;
     rdfs:subClassOf :PhysicalCharacteristicIndicator .
 
 
