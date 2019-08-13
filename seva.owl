@@ -1,4 +1,4 @@
-@prefix : <https://raw.githubusercontent.com/RPI-CASE/seva-ontology/master/seva#> .
+@prefix : <http://purl.org/seva/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -9,13 +9,11 @@
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sdg: <http://purl.unep.org/sdg/> .
-@base <http://purl.org/seva#> .
+@base <http://purl.org/seva> .
 
-<https://raw.githubusercontent.com/RPI-CASE/seva-ontology/master/seva> 
+<http://purl.org/seva>
         rdf:type owl:Ontology ;
-                              
-        owl:versionIRI <https://raw.githubusercontent.com/RPI-CASE/seva-ontology/master/seva/0.1> ;
-                              
+
         owl:imports <http://hadatac.org/ont/hasco/> ,
                     <http://purl.obolibrary.org/obo/envo.owl> ,
                     <http://semanticscience.org/ontology/sio-subset-labels.owl> ,
@@ -29,12 +27,12 @@
 #################################################################
 
 
-###  https://raw.githubusercontent.com/RPI-CASE/seva-ontology/master/seva#hasScale
+###  http://purl.org/seva/hasScale
 
 :hasScale rdf:type owl:ObjectProperty ;
-          
-          rdfs:domain <http://hadatac.org/ont/hasco#Project> ;
-          
+
+          rdfs:domain hasco:Project ;
+
           rdfs:range :Scale .
 
 #################################################################
@@ -44,50 +42,50 @@
 #################################################################
 
 
-###  https://raw.githubusercontent.com/RPI-CASE/seva-ontology/master/seva#Building
+###  http://purl.org/seva/Building
 
 :Building rdf:type owl:Class ;
-          
+
           rdfs:subClassOf :Scale .
 
 
 
-###  https://raw.githubusercontent.com/RPI-CASE/seva-ontology/master/seva#Micro
+###  http://purl.org/seva/Micro
 
 :Micro rdf:type owl:Class ;
-       
+
        rdfs:subClassOf :Scale .
 
 
 
-###  https://raw.githubusercontent.com/RPI-CASE/seva-ontology/master/seva#Nano
+###  http://purl.org/seva/Nano
 
 :Nano rdf:type owl:Class ;
-      
+
       rdfs:subClassOf :Scale .
 
 
 
-###  https://raw.githubusercontent.com/RPI-CASE/seva-ontology/master/seva#Room
+###  http://purl.org/seva/Room
 
 :Room rdf:type owl:Class ;
-      
+
       rdfs:subClassOf :Scale .
 
 
 
-###  https://raw.githubusercontent.com/RPI-CASE/seva-ontology/master/seva#Scale
+###  http://purl.org/seva/Scale
 
 :Scale rdf:type owl:Class ;
-       
+
        rdfs:subClassOf <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#Characteristic> .
 
 
 
-###  https://raw.githubusercontent.com/RPI-CASE/seva-ontology/master/seva#Urban
+###  http://purl.org/seva/Urban
 
 :Urban rdf:type owl:Class ;
-       
+
        rdfs:subClassOf :Scale .
 
 ###########
@@ -96,25 +94,39 @@
 #
 ###########
 
-:PhysicalCharacteristicIndicator a owl:Class ;     
-     rdfs:label "Physical Characteristic Indicator" ;     
-     rdfs:subClassOf hasco:StudyIndicator ;     
-     skos:definition "Physical Characteristic Indicator Class" . 
+###  http://purl.org/seva/PhysicalCharacteristicIndicator
 
-:ChemicalCharacteristicIndicator a owl:Class ;     
-     rdfs:label "Chemical Characteristic Indicator" ;     
-     rdfs:subClassOf hasco:StudyIndicator ;     
-     skos:definition "Chemical Characteristic Indicator Class" . 
+:PhysicalCharacteristicIndicator a owl:Class ;
+     rdfs:label "Physical Characteristic Indicator" ;
+     rdfs:subClassOf hasco:StudyIndicator ;
+     skos:definition "Physical Characteristic Indicator Class" .
 
-obo:ENVO_00010483 a owl:Class ;     
-     rdfs:label "Environmental Material" ;     
+###  http://purl.org/seva/ChemicalCharacteristicIndicator
+
+:ChemicalCharacteristicIndicator a owl:Class ;
+     rdfs:label "Chemical Characteristic Indicator" ;
+     rdfs:subClassOf hasco:StudyIndicator ;
+     skos:definition "Chemical Characteristic Indicator Class" .
+
+###  http://purl.org/seva/SDGIndicator
+
+:SDGIndicator a owl:Class ;
+    rdfs:label "Sustainable Development Goal Indicator" ;
+    rdfs:subClassOf hasco:StudyIndicator ;
+    skos:definition "Sustainable Development Goal Indicator Class" .
+
+obo:ENVO_00010483 a owl:Class ;
+     rdfs:label "Environmental Material" ;
      rdfs:subClassOf  :PhysicalCharacteristicIndicator, sio:Specimen .
 
+
 ###########
 #
-#   classes 
+#   classes
 #
 ###########
+
+###  http://purl.org/seva/DewPoint
 
 :DewPoint a owl:Class;
      rdfs:label "dew point" ;
@@ -123,52 +135,52 @@ obo:ENVO_00010483 a owl:Class ;
 
 ###########
 #
-#   Quotes 
+#   Quotes
 #
 ###########
 
 # From ENVO
 
-obo:ENVO_01000828 a owl:Class ;     
+obo:ENVO_01000828 a owl:Class ;
      rdfs:label "humid air" ;
      skos:definition "Air which has increased levels of water vapour." ;
      rdfs:subClassOf  :PhysicalCharacteristicIndicator .
 
-obo:ENVO_09200001 a owl:Class ;     
+obo:ENVO_09200001 a owl:Class ;
      rdfs:label "temperature of air" ;
      skos:definition "The temperature of some air" ;
      rdfs:subClassOf  :PhysicalCharacteristicIndicator .
 
-obo:ENVO_09200012 a owl:Class ;     
+obo:ENVO_09200012 a owl:Class ;
      rdfs:label "temperature of soil" ;
      skos:definition "The temperature of some soil" ;
      rdfs:subClassOf  :PhysicalCharacteristicIndicator .
 
-obo:ENVO_09200011 a owl:Class ;     
+obo:ENVO_09200011 a owl:Class ;
      rdfs:label "pressure of air" ;
      skos:definition "The pressure of some air" ;
      rdfs:subClassOf  :PhysicalCharacteristicIndicator .
 
-obo:ENVO_01000451 a owl:Class ;     
+obo:ENVO_01000451 a owl:Class ;
      rdfs:label "atmospheric carbon dioxide" ;
      skos:definition "Atmospheric carbon dioxide is an environmental material composed of carbon dioxide in its gaseous form present in an atmosphere." ;
      rdfs:subClassOf :ChemicalCharacteristicIndicator, sio:Specimen .
 
-# From PATO 
+# From PATO
 
-obo:PATO_0001519 a owl:Class ;     
+obo:PATO_0001519 a owl:Class ;
      rdfs:label "sound quality" ;
      skos:definition "A quality inhering in a bearer by virtue of vibration, as perceived by the sense of hearing. [database_cross_reference: Wikipedia:http://en.wikipedia.org/wiki/Sound_quality]" ;
      rdfs:subClassOf  :PhysicalCharacteristicIndicator .
 
-obo:PATO_0001718 a owl:Class ;     
+obo:PATO_0001718 a owl:Class ;
      rdfs:label "luminance" ;
      skos:definition "A quality that exists by virtue of the luminous intensity per unit area projected in a given direction. [database_cross_reference: Wikipedia:http://en.wikipedia.org/wiki/Luminance]" ;
      rdfs:subClassOf  :PhysicalCharacteristicIndicator .
 
 # CHEBI
 
-obo:CHEBI_134179 a owl:Class ;     
+obo:CHEBI_134179 a owl:Class ;
      rdfs:label "volatile organic compound" ;
      skos:definition "Any organic compound having an initial boiling point less than or equal to 250 C (482 F) measured at a standard atmospheric pressure of 101.3 kPa." ;
      rdfs:subClassOf  :ChemicalCharacteristicIndicator, sio:Specimen .
@@ -180,13 +192,9 @@ obo:NCIT_c49839 a owl:Class ;
      skos:definition "A device designed to produce an electric current through chemical reaction." ;
      rdfs:subClassOf  :ChemicalCharacteristicIndicator, sio:Specimen .
 
-#SDG
+# SDG
 
 sdg:SDGIO_00020001 a owl:Class ;
-     rdfs:label "Indicator 291" ;
+     rdfs:label "SDG Indicator 1.2.1" ;
      skos:definition "Proportion of population living below the national poverty line, by sex and age" ;
-     rdfs:subClassOf :PhysicalCharacteristicIndicator .
-
-
-###  Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi
-
+     rdfs:subClassOf :SDGIndicator .
