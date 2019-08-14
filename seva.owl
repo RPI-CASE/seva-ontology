@@ -9,6 +9,7 @@
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sdg: <http://purl.unep.org/sdg/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @base <http://purl.org/seva> .
 
 <http://purl.org/seva>
