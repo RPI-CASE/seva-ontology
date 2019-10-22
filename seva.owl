@@ -167,6 +167,11 @@ obo:ENVO_01000451 a owl:Class ;
      skos:definition "Atmospheric carbon dioxide is an environmental material composed of carbon dioxide in its gaseous form present in an atmosphere." ;
      rdfs:subClassOf :ChemicalCharacteristicIndicator, sio:Specimen .
 
+obo:ENVO_01000792 a owl:Class ;
+     rdfs:label "Wind" ;
+     skos:definition "A process whereby a large volume of gas moves due to a disequilibrium of physical forces." ;
+     rdfs:subClassOf  :PhysicalCharacteristicIndicator .
+
 # From PATO
 
 obo:PATO_0001519 a owl:Class ;
@@ -192,11 +197,6 @@ obo:NCIT_c49839 a owl:Class ;
      rdfs:label "Battery Device" ;
      skos:definition "A device designed to produce an electric current through chemical reaction." ;
      rdfs:subClassOf  :ChemicalCharacteristicIndicator, sio:Specimen .
-
-obo:NCIT_c73434 a owl:Class ;
-     rdfs:label "Air" ;
-     skos:definition "A mixture of gases making up the earth's atmosphere, consisting mainly of nitrogen, oxygen, argon, and carbon dioxide." ;
-     rdfs:subClassOf  :PhysicalCharacteristicIndicator .
 
 # SDG
 
