@@ -192,6 +192,11 @@ obo:NCIT_c49839 a owl:Class ;
      skos:definition "A device designed to produce an electric current through chemical reaction." ;
      rdfs:subClassOf  :ChemicalCharacteristicIndicator, sio:Specimen .
 
+obo:NCIT_c73434 a owl:Class ;
+     rdfs:label "Air" ;
+     skos:definition "A mixture of gases making up the earth's atmosphere, consisting mainly of nitrogen, oxygen, argon, and carbon dioxide." ;
+     rdfs:subClassOf  :PhysicalCharacteristicIndicator .
+
 # SDG
 
 sdg:SDGIO_00020000 a owl:Class ;
