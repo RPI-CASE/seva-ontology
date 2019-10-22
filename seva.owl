@@ -9,6 +9,7 @@
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sdg: <http://purl.unep.org/sdg/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @base <http://purl.org/seva> .
 
 <http://purl.org/seva>
@@ -200,831 +201,1161 @@ obo:NCIT_c73434 a owl:Class ;
 # SDG
 
 sdg:SDGIO_00020000 a owl:Class ;
-    rdfs:label "SDG Indicator 1.1.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of population below the international poverty line, by sex, age, employment status and geographical location (urban/rural)" .
+    rdfs:label "Proportion of population below the international poverty line, by sex, age, employment status and geographical location (urban/rural)" ;
+    skos:definition "Indicator 1.1.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020001 a owl:Class ;
-    rdfs:label "SDG Indicator 1.2.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of population living below the national poverty line, by sex and age" .
+    rdfs:label "Proportion of population living below the national poverty line, by sex and age" ;
+    skos:definition "Indicator 1.2.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020002 a owl:Class ;
+    rdfs:label "Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions" ;
+    skos:definition "Indicator 1.2.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020003 a owl:Class ;
-    rdfs:label "SDG Indicator 1.3.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons, older persons, persons with disabilities, pregnant women, newborns, work-injury victims and the poor and the vulnerable" .
+    rdfs:label "Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons, older persons, persons with disabilities, pregnant women, newborns, work-injury victims and the poor and the vulnerable" ;
+    skos:definition "Indicator 1.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020004 a owl:Class ;
-    rdfs:label "SDG Indicator 1.4.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of population living in households with access to basic services" .
+    rdfs:label "Proportion of population living in households with access to basic services" ;
+    skos:definition "Indicator 1.4.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020005 a owl:Class ;
+    rdfs:label "Proportion of total adult population with secure tenure rights to land, with legally recognized documentation and who perceive their rights to land as secure, by sex and by type of tenure" ;
+    skos:definition "Indicator 1.4.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020006 a owl:Class ;
-    rdfs:label "SDG Indicator 1.5.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population" .
+    rdfs:label "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population" ;
+    skos:definition "Indicator 1.5.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020007 a owl:Class ;
-    rdfs:label "SDG Indicator 1.5.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Direct economic loss attributed to disasters in relation to global gross domestic product (GDP)" .
+    rdfs:label "Direct economic loss attributed to disasters in relation to global gross domestic product (GDP)" ;
+    skos:definition "Indicator 1.5.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020008 a owl:Class ;
-    rdfs:label "SDG Indicator 1.5.3" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015-2030" .
+    rdfs:label "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015-2030" ;
+    skos:definition "Indicator 1.5.3" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020009 a owl:Class ;
-    rdfs:label "SDG Indicator 1.5.4" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies" .
+    rdfs:label "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies" ;
+    skos:definition "Indicator 1.5.4" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020010 a owl:Class ;
+    rdfs:label "Proportion of domestically generated resources allocated by the government directly to poverty reduction programmes" ;
+    skos:definition "Indicator 1.a.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020011 a owl:Class ;
-    rdfs:label "SDG Indicator 1.a.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of total government spending on essential services (education, health and social protection)" .
+    rdfs:label "Proportion of total government spending on essential services (education, health and social protection)" ;
+    skos:definition "Indicator 1.a.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020012 a owl:Class ;
+    rdfs:label "Sum of total grants and non-debt-creating inflows directly allocated to poverty reduction programmes as a proportion of GDP" ;
+    skos:definition "Indicator 1.a.3" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020013 a owl:Class ;
+    rdfs:label "Proportion of government recurrent and capital spending to sectors that disproportionately benefit women, the poor and vulnerable groups" ;
+    skos:definition "Indicator 1.b.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020014 a owl:Class ;
-    rdfs:label "SDG Indicator 2.1.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Prevalence of undernourishment" .
+    rdfs:label "Prevalence of undernourishment" ;
+    skos:definition "Indicator 2.1.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020015 a owl:Class ;
-    rdfs:label "SDG Indicator 2.1.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Prevalence of moderate or severe food insecurity in the population, based on the Food Insecurity Experience Scale (FIES)" .
+    rdfs:label "Prevalence of moderate or severe food insecurity in the population, based on the Food Insecurity Experience Scale (FIES)" ;
+    skos:definition "Indicator 2.1.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020016 a owl:Class ;
-    rdfs:label "SDG Indicator 2.2.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age" .
+    rdfs:label "Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age" ;
+    skos:definition "Indicator 2.2.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020017 a owl:Class ;
-    rdfs:label "SDG Indicator 2.2.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)" .
+    rdfs:label "Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)" ;
+    skos:definition "Indicator 2.2.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020018 a owl:Class ;
-    rdfs:label "SDG Indicator 2.3.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size" .
+    rdfs:label "Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size" ;
+    skos:definition "Indicator 2.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020019 a owl:Class ;
-    rdfs:label "SDG Indicator 2.3.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Average income of small-scale food producers, by sex and indigenous status" .
+    rdfs:label "Average income of small-scale food producers, by sex and indigenous status" ;
+    skos:definition "Indicator 2.3.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020020 a owl:Class ;
+    rdfs:label "Proportion of agricultural area under productive and sustainable agriculture" ;
+    skos:definition "Indicator 2.4.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020021 a owl:Class ;
-    rdfs:label "SDG Indicator 2.5.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Number of plant and animal genetic resources for food and agriculture secured in either medium or long-term conservation facilities" .
+    rdfs:label "Number of plant and animal genetic resources for food and agriculture secured in either medium or long-term conservation facilities" ;
+    skos:definition "Indicator 2.5.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020022 a owl:Class ;
-    rdfs:label "SDG Indicator 2.5.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of local breeds classified as being at risk, not-at-risk or at unknown level of risk of extinction" .
+    rdfs:label "Proportion of local breeds classified as being at risk, not-at-risk or at unknown level of risk of extinction" ;
+    skos:definition "Indicator 2.5.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020023 a owl:Class ;
-    rdfs:label "SDG Indicator 2.a.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "The agriculture orientation index for government expenditures" .
+    rdfs:label "The agriculture orientation index for government expenditures" ;
+    skos:definition "Indicator 2.a.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020024 a owl:Class ;
-    rdfs:label "SDG Indicator 2.a.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Total official flows (official development assistance plus other official flows) to the agriculture sector" .
+    rdfs:label "Total official flows (official development assistance plus other official flows) to the agriculture sector" ;
+    skos:definition "Indicator 2.a.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020025 a owl:Class ;
-    rdfs:label "SDG Indicator 2.b.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Agricultural export subsidies" .
+    rdfs:label "Agricultural export subsidies" ;
+    skos:definition "Indicator 2.b.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020026 a owl:Class ;
-    rdfs:label "SDG Indicator 2.c.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Indicator of food price anomalies" .
+    rdfs:label "Indicator of food price anomalies" ;
+    skos:definition "Indicator 2.c.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020027 a owl:Class ;
-    rdfs:label "SDG Indicator 3.1.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Maternal mortality ratio" .
+    rdfs:label "Maternal mortality ratio" ;
+    skos:definition "Indicator 3.1.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020028 a owl:Class ;
-    rdfs:label "SDG Indicator 3.1.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of births attended by skilled health personnel" .
+    rdfs:label "Proportion of births attended by skilled health personnel" ;
+    skos:definition "Indicator 3.1.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020029 a owl:Class ;
-    rdfs:label "SDG Indicator 3.2.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Under-five mortality rate" .
+    rdfs:label "Under-five mortality rate" ;
+    skos:definition "Indicator 3.2.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020030 a owl:Class ;
-    rdfs:label "SDG Indicator 3.2.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Neonatal mortality rate" .
+    rdfs:label "Neonatal mortality rate" ;
+    skos:definition "Indicator 3.2.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020031 a owl:Class ;
-    rdfs:label "SDG Indicator 3.3.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Number of new HIV infections per 1,000 uninfected population, by sex, age and key populations" .
+    rdfs:label "Number of new HIV infections per 1,000 uninfected population, by sex, age and key populations" ;
+    skos:definition "Indicator 3.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020032 a owl:Class ;
-    rdfs:label "SDG Indicator 3.3.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Tuberculosis incidence per 100,000 population" .
+    rdfs:label "Tuberculosis incidence per 100,000 population" ;
+    skos:definition "Indicator 3.3.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020033 a owl:Class ;
-    rdfs:label "SDG Indicator 3.3.3" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Malaria incidence per 1,000 population" .
+    rdfs:label "Malaria incidence per 1,000 population" ;
+    skos:definition "Indicator 3.3.3" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020034 a owl:Class ;
-    rdfs:label "SDG Indicator 3.3.4" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Hepatitis B incidence per 100,000 population" .
+    rdfs:label "Hepatitis B incidence per 100,000 population" ;
+    skos:definition "Indicator 3.3.4" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020035 a owl:Class ;
-    rdfs:label "SDG Indicator 3.3.5" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Number of people requiring interventions against neglected tropical diseases" .
+    rdfs:label "Number of people requiring interventions against neglected tropical diseases" ;
+    skos:definition "Indicator 3.3.5" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020036 a owl:Class ;
-    rdfs:label "SDG Indicator 3.4.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease" .
+    rdfs:label "Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease" ;
+    skos:definition "Indicator 3.4.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020037 a owl:Class ;
-    rdfs:label "SDG Indicator 3.4.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Suicide mortality rate" .
+    rdfs:label "Suicide mortality rate" ;
+    skos:definition "Indicator 3.4.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020038 a owl:Class ;
+    rdfs:label "Coverage of treatment interventions (pharmacological, psychosocial and rehabilitation and aftercare services) for substance use disorders" ;
+    skos:definition "Indicator 3.5.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020039 a owl:Class ;
-    rdfs:label "SDG Indicator 3.5.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Harmful use of alcohol, defined according to the national context as alcohol per capita consumption (aged 15 years and older) within a calendar year in litres of pure alcohol" .
+    rdfs:label "Harmful use of alcohol, defined according to the national context as alcohol per capita consumption (aged 15 years and older) within a calendar year in litres of pure alcohol" ;
+    skos:definition "Indicator 3.5.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020040 a owl:Class ;
-    rdfs:label "SDG Indicator 3.6.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Death rate due to road traffic injuries" .
+    rdfs:label "Death rate due to road traffic injuries" ;
+    skos:definition "Indicator 3.6.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020041 a owl:Class ;
-    rdfs:label "SDG Indicator 3.7.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of women of reproductive age (aged 15-49 years) who have their need for family planning satisfied with modern methods" .
+    rdfs:label "Proportion of women of reproductive age (aged 15-49 years) who have their need for family planning satisfied with modern methods" ;
+    skos:definition "Indicator 3.7.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020042 a owl:Class ;
-    rdfs:label "SDG Indicator 3.7.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Adolescent birth rate (aged 10-14 years; aged 15-19 years) per 1,000 women in that age group" .
+    rdfs:label "Adolescent birth rate (aged 10-14 years; aged 15-19 years) per 1,000 women in that age group" ;
+    skos:definition "Indicator 3.7.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020043 a owl:Class ;
-    rdfs:label "SDG Indicator 3.8.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition " Coverage of essential health services (defined as the average coverage of essential services based on tracer interventions that include reproductive, maternal, newborn and child health, infectious diseases, non-communicable diseases and service capacity and access, among the general and the most disadvantaged population)" .
+    rdfs:label "Coverage of essential health services (defined as the average coverage of essential services based on tracer interventions that include reproductive, maternal, newborn and child health, infectious diseases, non-communicable diseases and service capacity and access, among the general and the most disadvantaged population)" ;
+    skos:definition "Indicator 3.8.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020044 a owl:Class ;
-    rdfs:label "SDG Indicator 3.8.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of population with large household expenditures on health as a share of total household expenditure or income" .
+    rdfs:label "Proportion of population with large household expenditures on health as a share of total household expenditure or income" ;
+    skos:definition "Indicator 3.8.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020045 a owl:Class ;
-    rdfs:label "SDG Indicator 3.9.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Mortality rate attributed to household and ambient air pollution" .
+    rdfs:label "Mortality rate attributed to household and ambient air pollution" ;
+    skos:definition "Indicator 3.9.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020046 a owl:Class ;
-    rdfs:label "SDG Indicator 3.9.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (exposure to unsafe Water, Sanitation and Hygiene for All (WASH) services)" .
+    rdfs:label "Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (exposure to unsafe Water, Sanitation and Hygiene for All (WASH) services)" ;
+    skos:definition "Indicator 3.9.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020047 a owl:Class ;
-    rdfs:label "SDG Indicator 3.9.3" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Mortality rate attributed to unintentional poisoning" .
+    rdfs:label "Mortality rate attributed to unintentional poisoning" ;
+    skos:definition "Indicator 3.9.3" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020048 a owl:Class ;
-    rdfs:label "SDG Indicator 3.a.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Age-standardized prevalence of current tobacco use among persons aged 15 years and older" .
+    rdfs:label "Age-standardized prevalence of current tobacco use among persons aged 15 years and older" ;
+    skos:definition "Indicator 3.a.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020049 a owl:Class ;
-    rdfs:label "SDG Indicator 3.b.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of the target population covered by all vaccines included in their national programme" .
+    rdfs:label "Proportion of the target population covered by all vaccines included in their national programme" ;
+    skos:definition "Indicator 3.b.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020050 a owl:Class ;
-    rdfs:label "SDG Indicator 3.b.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Total net official development assistance to medical research and basic health sectors" .
+    rdfs:label "Total net official development assistance to medical research and basic health sectors" ;
+    skos:definition "Indicator 3.b.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020051 a owl:Class ;
+    rdfs:label "Proportion of health facilities that have a core set of relevant essential medicines available and affordable on a sustainable basis" ;
+    skos:definition "Indicator 3.b.3" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020052 a owl:Class ;
-    rdfs:label "SDG Indicator 3.c.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Health worker density and distribution" .
+    rdfs:label "Health worker density and distribution" ;
+    skos:definition "Indicator 3.c.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020053 a owl:Class ;
-    rdfs:label "SDG Indicator 3.d.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "International Health Regulations (IHR) capacity and health emergency preparedness" .
+    rdfs:label "International Health Regulations (IHR) capacity and health emergency preparedness" ;
+    skos:definition "Indicator 3.d.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020054 a owl:Class ;
-    rdfs:label "SDG Indicator 4.1.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of children and young people: (a) in grades 2/3; (b) at the end of primary; and (c) at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics, by sex" .
+    rdfs:label "Proportion of children and young people: (a) in grades 2/3; (b) at the end of primary; and (c) at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics, by sex" ;
+    skos:definition "Indicator 4.1.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020055 a owl:Class ;
-    rdfs:label "SDG Indicator 4.2.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of children under 5 years of age who are developmentally on track in health, learning and psychosocial well-being, by sex" .
+    rdfs:label "Proportion of children under 5 years of age who are developmentally on track in health, learning and psychosocial well-being, by sex" ;
+    skos:definition "Indicator 4.2.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020056 a owl:Class ;
-    rdfs:label "SDG Indicator 4.2.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Participation rate in organized learning (one year before the official primary entry age), by sex" .
+    rdfs:label "Participation rate in organized learning (one year before the official primary entry age), by sex" ;
+    skos:definition "Indicator 4.2.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020057 a owl:Class ;
-    rdfs:label "SDG Indicator 4.3.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex" .
+    rdfs:label "Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex" ;
+    skos:definition "Indicator 4.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020058 a owl:Class ;
-    rdfs:label "SDG Indicator 4.4.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill" .
+    rdfs:label "Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill" ;
+    skos:definition "Indicator 4.4.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020059 a owl:Class ;
-    rdfs:label "SDG Indicator 4.5.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Parity indices (female/male, rural/urban, bottom/top wealth quintile and others such as disability status, indigenous peoples and conflict-affected, as data become available) for all education indicators on this list that can be disaggregated" .
+    rdfs:label "Parity indices (female/male, rural/urban, bottom/top wealth quintile and others such as disability status, indigenous peoples and conflict-affected, as data become available) for all education indicators on this list that can be disaggregated" ;
+    skos:definition "Indicator 4.5.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020060 a owl:Class ;
-    rdfs:label "SDG Indicator 4.6.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of population in a given age group achieving at least a fixed level of proficiency in functional (a) literacy and (b) numeracy skills, by sex" .
+    rdfs:label "Proportion of population in a given age group achieving at least a fixed level of proficiency in functional (a) literacy and (b) numeracy skills, by sex" ;
+    skos:definition "Indicator 4.6.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020061 a owl:Class ;
+    rdfs:label "Extent to which (i) global citizenship education and (ii) education for sustainable development, including gender equality and human rights, are mainstreamed at all levels in: (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment" ;
+    skos:definition "Indicator 4.7.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020062 a owl:Class ;
-    rdfs:label "SDG Indicator 4.a.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of schools with access to: (a) electricity; (b) the Internet for pedagogical purposes; (c) computers for pedagogical purposes; (d) adapted infrastructure and materials for students with disabilities; (e) basic drinking water; (f) single-sex basic sanitation facilities; and (g) basic handwashing facilities (as per the WASH indicator definitions)" .
+    rdfs:label "Proportion of schools with access to: (a) electricity; (b) the Internet for pedagogical purposes; (c) computers for pedagogical purposes; (d) adapted infrastructure and materials for students with disabilities; (e) basic drinking water; (f) single-sex basic sanitation facilities; and (g) basic handwashing facilities (as per the WASH indicator definitions)" ;
+    skos:definition "Indicator 4.a.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020063 a owl:Class ;
-    rdfs:label "SDG Indicator 4.b.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Volume of official development assistance flows for scholarships by sector and type of study" .
+    rdfs:label "Volume of official development assistance flows for scholarships by sector and type of study" ;
+    skos:definition "Indicator 4.b.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020064 a owl:Class ;
-    rdfs:label "SDG Indicator 4.c.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of teachers in: (a) pre-primary; (b) primary; (c) lower secondary; and (d) upper secondary education who have received at least the minimum organized teacher training (e.g. pedagogical training) pre-service or in-service required for teaching at the relevant level in a given country" .
+    rdfs:label "Proportion of teachers in: (a) pre-primary; (b) primary; (c) lower secondary; and (d) upper secondary education who have received at least the minimum organized teacher training (e.g. pedagogical training) pre-service or in-service required for teaching at the relevant level in a given country" ;
+    skos:definition "Indicator 4.c.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020065 a owl:Class ;
-    rdfs:label "SDG Indicator 5.1.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Whether or not legal frameworks are in place to promote, enforce and monitor equality and non‑discrimination on the basis of sex" .
+    rdfs:label "Whether or not legal frameworks are in place to promote, enforce and monitor equality and non-discrimination on the basis of sex" ;
+    skos:definition "Indicator 5.1.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020066 a owl:Class ;
-    rdfs:label "SDG Indicator 5.2.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age" .
+    rdfs:label "Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age" ;
+    skos:definition "Indicator 5.2.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020067 a owl:Class ;
+    rdfs:label "Proportion of women and girls aged 15 years and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months, by age and place of occurrence" ;
+    skos:definition "Indicator 5.2.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020068 a owl:Class ;
-    rdfs:label "SDG Indicator 5.3.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of women aged 20-24 years who were married or in a union before age 15 and before age 18" .
+    rdfs:label "Proportion of women aged 20-24 years who were married or in a union before age 15 and before age 18" ;
+    skos:definition "Indicator 5.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020069 a owl:Class ;
-    rdfs:label "SDG Indicator 5.3.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of girls and women aged 15-49 years who have undergone female genital mutilation/cutting, by age" .
+    rdfs:label "Proportion of girls and women aged 15-49 years who have undergone female genital mutilation/cutting, by age" ;
+    skos:definition "Indicator 5.3.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020070 a owl:Class ;
-    rdfs:label "SDG Indicator 5.4.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of time spent on unpaid domestic and care work, by sex, age and location" .
+    rdfs:label "Proportion of time spent on unpaid domestic and care work, by sex, age and location" ;
+    skos:definition "Indicator 5.4.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020071 a owl:Class ;
-    rdfs:label "SDG Indicator 5.5.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of seats held by women in (a) national parliaments and (b) local governments" .
+    rdfs:label "Proportion of seats held by women in (a) national parliaments and (b) local governments" ;
+    skos:definition "Indicator 5.5.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020072 a owl:Class ;
-    rdfs:label "SDG Indicator 5.5.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of women in managerial positions" .
+    rdfs:label "Proportion of women in managerial positions" ;
+    skos:definition "Indicator 5.5.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020073 a owl:Class ;
-    rdfs:label "SDG Indicator 5.6.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of women aged 15-49 years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care" .
+    rdfs:label "Proportion of women aged 15-49 years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care" ;
+    skos:definition "Indicator 5.6.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020074 a owl:Class ;
+    rdfs:label "Number of countries with laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education" ;
+    skos:definition "Indicator 5.6.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020075 a owl:Class ;
+    rdfs:label "(a) Proportion of total agricultural population with ownership or secure rights over agricultural land, by sex; and (b) share of women among owners or rights-bearers of agricultural land, by type of tenure" ;
+    skos:definition "Indicator 5.a.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020076 a owl:Class ;
+    rdfs:label "Proportion of countries where the legal framework (including customary law) guarantees women’s equal rights to land ownership and/or control" ;
+    skos:definition "Indicator 5.a.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020077 a owl:Class ;
-    rdfs:label "SDG Indicator 5.b.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of individuals who own a mobile telephone, by sex" .
+    rdfs:label "Proportion of individuals who own a mobile telephone, by sex" ;
+    skos:definition "Indicator 5.b.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020078 a owl:Class ;
-    rdfs:label "SDG Indicator 5.c.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of countries with systems to track and make public allocations for gender equality and women’s empowerment" .
+    rdfs:label "Proportion of countries with systems to track and make public allocations for gender equality and women’s empowerment" ;
+    skos:definition "Indicator 5.c.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020079 a owl:Class ;
-    rdfs:label "SDG Indicator 6.1.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of population using safely managed drinking water services" .
+    rdfs:label "Proportion of population using safely managed drinking water services" ;
+    skos:definition "Indicator 6.1.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020080 a owl:Class ;
-    rdfs:label "SDG Indicator 6.2.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of population using safely managed sanitation services, including a hand-washing facility with soap and water" .
+    rdfs:label "Proportion of population using safely managed sanitation services, including a hand-washing facility with soap and water" ;
+    skos:definition "Indicator 6.2.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020081 a owl:Class ;
-    rdfs:label "SDG Indicator 6.3.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of wastewater safely treated" .
+    rdfs:label "Proportion of wastewater safely treated" ;
+    skos:definition "Indicator 6.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020082 a owl:Class ;
-    rdfs:label "SDG Indicator 6.3.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of bodies of water with good ambient water quality" .
+    rdfs:label "Proportion of bodies of water with good ambient water quality" ;
+    skos:definition "Indicator 6.3.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020083 a owl:Class ;
-    rdfs:label "SDG Indicator 6.4.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Change in water-use efficiency over time" .
+    rdfs:label "Change in water-use efficiency over time" ;
+    skos:definition "Indicator 6.4.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020084 a owl:Class ;
-    rdfs:label "SDG Indicator 6.4.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources" .
+    rdfs:label "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources" ;
+    skos:definition "Indicator 6.4.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020085 a owl:Class ;
-    rdfs:label "SDG Indicator 6.5.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Degree of integrated water resources management implementation (0-100)" .
+    rdfs:label "Degree of integrated water resources management implementation (0-100)" ;
+    skos:definition "Indicator 6.5.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020086 a owl:Class ;
-    rdfs:label "SDG Indicator 6.5.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of transboundary basin area with an operational arrangement for water cooperation" .
+    rdfs:label "Proportion of transboundary basin area with an operational arrangement for water cooperation" ;
+    skos:definition "Indicator 6.5.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020087 a owl:Class ;
-    rdfs:label "SDG Indicator 6.6.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Change in the extent of water-related ecosystems over time" .
+    rdfs:label "Change in the extent of water-related ecosystems over time" ;
+    skos:definition "Indicator 6.6.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020088 a owl:Class ;
-    rdfs:label "SDG Indicator 6.a.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan" .
+    rdfs:label "Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan" ;
+    skos:definition "Indicator 6.a.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020089 a owl:Class ;
-    rdfs:label "SDG Indicator 6.b.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of local administrative units with established and operational policies and procedures for participation of local communities in water and sanitation management" .
+    rdfs:label "Proportion of local administrative units with established and operational policies and procedures for participation of local communities in water and sanitation management" ;
+    skos:definition "Indicator 6.b.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020090 a owl:Class ;
-    rdfs:label "SDG Indicator 7.1.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of population with access to electricity" .
+    rdfs:label "Proportion of population with access to electricity" ;
+    skos:definition "Indicator 7.1.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020091 a owl:Class ;
-    rdfs:label "SDG Indicator 7.1.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of population with primary reliance on clean fuels and technology" .
+    rdfs:label "Proportion of population with primary reliance on clean fuels and technology" ;
+    skos:definition "Indicator 7.1.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020092 a owl:Class ;
-    rdfs:label "SDG Indicator 7.2.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Renewable energy share in the total final energy consumption" .
+    rdfs:label "Renewable energy share in the total final energy consumption" ;
+    skos:definition "Indicator 7.2.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020093 a owl:Class ;
-    rdfs:label "SDG Indicator 7.3.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Energy intensity measured in terms of primary energy and GDP" .
+    rdfs:label "Energy intensity measured in terms of primary energy and GDP" ;
+    skos:definition "Indicator 7.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020094 a owl:Class ;
-    rdfs:label "SDG Indicator 7.a.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "International financial flows to developing countries in support of clean energy research and development and renewable energy production, including in hybrid systems" .
+    rdfs:label "International financial flows to developing countries in support of clean energy research and development and renewable energy production, including in hybrid systems" ;
+    skos:definition "Indicator 7.a.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020095 a owl:Class ;
+    rdfs:label "Investments in energy efficiency as a proportion of GDP and the amount of foreign direct investment in financial transfer for infrastructure and technology to sustainable development services" ;
+    skos:definition "Indicator 7.b.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020096 a owl:Class ;
-    rdfs:label "SDG Indicator 8.1.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Annual growth rate of real GDP per capita" .
+    rdfs:label "Annual growth rate of real GDP per capita" ;
+    skos:definition "Indicator 8.1.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020097 a owl:Class ;
-    rdfs:label "SDG Indicator 8.2.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Annual growth rate of real GDP per employed person" .
+    rdfs:label "Annual growth rate of real GDP per employed person" ;
+    skos:definition "Indicator 8.2.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020098 a owl:Class ;
-    rdfs:label "SDG Indicator 8.3.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of informal employment in non‑agriculture employment, by sex" .
+    rdfs:label "Proportion of informal employment in non‑agriculture employment, by sex" ;
+    skos:definition "Indicator 8.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020099 a owl:Class ;
-    rdfs:label "SDG Indicator 8.4.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Material footprint, material footprint per capita, and material footprint per GDP" .
+    rdfs:label "Material footprint, material footprint per capita, and material footprint per GDP" ;
+    skos:definition "Indicator 8.4.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020100 a owl:Class ;
-    rdfs:label "SDG Indicator 8.4.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP" .
+    rdfs:label "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP" ;
+    skos:definition "Indicator 8.4.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020101 a owl:Class ;
-    rdfs:label "SDG Indicator 8.5.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Average hourly earnings of female and male employees, by occupation, age and persons with disabilities" .
+    rdfs:label "Average hourly earnings of female and male employees, by occupation, age and persons with disabilities" ;
+    skos:definition "Indicator 8.5.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020102 a owl:Class ;
-    rdfs:label "SDG Indicator 8.5.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Unemployment rate, by sex, age and persons with disabilities" .
+    rdfs:label "Unemployment rate, by sex, age and persons with disabilities" ;
+    skos:definition "Indicator 8.5.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020103 a owl:Class ;
-    rdfs:label "SDG Indicator 8.6.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of youth (aged 15-24 years) not in education, employment or training" .
+    rdfs:label "Proportion of youth (aged 15-24 years) not in education, employment or training" ;
+    skos:definition "Indicator 8.6.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020104 a owl:Class ;
-    rdfs:label "SDG Indicator 8.7.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion and number of children aged 5‑17 years engaged in child labour, by sex and age" .
+    rdfs:label "Proportion and number of children aged 5‑17 years engaged in child labour, by sex and age" ;
+    skos:definition "Indicator 8.7.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020105 a owl:Class ;
-    rdfs:label "SDG Indicator 8.8.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Frequency rates of fatal and non-fatal occupational injuries, by sex and migrant status" .
+    rdfs:label "Frequency rates of fatal and non-fatal occupational injuries, by sex and migrant status" ;
+    skos:definition "Indicator 8.8.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020106 a owl:Class ;
+    rdfs:label "Level of national compliance of labour rights (freedom of association and collective bargaining) based on International Labour Organization (ILO) textual sources and national legislation, by sex and migrant status" ;
+    skos:definition "Indicator 8.8.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020107 a owl:Class ;
+    rdfs:label "Tourism direct GDP as a proportion of total GDP and in growth rate" ;
+    skos:definition "Indicator 8.9.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020108 a owl:Class ;
+    rdfs:label "Proportion of jobs in sustainable tourism industries out of total tourism jobs" ;
+    skos:definition "Indicator 8.9.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020109 a owl:Class ;
-    rdfs:label "SDG Indicator 8.10.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "(a) Number of commercial bank branches per 100,000 adults and (b) number of automated teller machines (ATMs) per 100,000 adults" .
+    rdfs:label "(a) Number of commercial bank branches per 100,000 adults and (b) number of automated teller machines (ATMs) per 100,000 adults" ;
+    skos:definition "Indicator 8.10.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020110 a owl:Class ;
-    rdfs:label "SDG Indicator 8.10.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of adults (15 years and older) with an account at a bank or other financial institution or with a mobile-money-service provider" .
+    rdfs:label "Proportion of adults (15 years and older) with an account at a bank or other financial institution or with a mobile-money-service provider" ;
+    skos:definition "Indicator 8.10.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020111 a owl:Class ;
-    rdfs:label "SDG Indicator 8.a.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Aid for Trade commitments and disbursements" .
+    rdfs:label "Aid for Trade commitments and disbursements" ;
+    skos:definition "Indicator 8.a.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020112 a owl:Class ;
+    rdfs:label "Existence of a developed and operationalized national strategy for youth employment, as a distinct strategy or as part of a national employment strategy" ;
+    skos:definition "Indicator 8.b.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020113 a owl:Class ;
+    rdfs:label "Proportion of the rural population who live within 2 km of an all-season road" ;
+    skos:definition "Indicator 9.1.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020114 a owl:Class ;
-    rdfs:label "SDG Indicator 9.1.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Passenger and freight volumes, by mode of transport" .
+    rdfs:label "Passenger and freight volumes, by mode of transport" ;
+    skos:definition "Indicator 9.1.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020115 a owl:Class ;
-    rdfs:label "SDG Indicator 9.2.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Manufacturing value added as a proportion of GDP and per capita" .
+    rdfs:label "Manufacturing value added as a proportion of GDP and per capita" ;
+    skos:definition "Indicator 9.2.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020116 a owl:Class ;
-    rdfs:label "SDG Indicator 9.2.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Manufacturing employment as a proportion of total employment" .
+    rdfs:label "Manufacturing employment as a proportion of total employment" ;
+    skos:definition "Indicator 9.2.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020117 a owl:Class ;
-    rdfs:label "SDG Indicator 9.3.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of small-scale industries in total industry value added" .
+    rdfs:label "Proportion of small-scale industries in total industry value added" ;
+    skos:definition "Indicator 9.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020118 a owl:Class ;
-    rdfs:label "SDG Indicator 9.3.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of small-scale industries with a loan or line of credit" .
+    rdfs:label "Proportion of small-scale industries with a loan or line of credit" ;
+    skos:definition "Indicator 9.3.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020119 a owl:Class ;
-    rdfs:label "SDG Indicator 9.4.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "CO2 emission per unit of value added" .
+    rdfs:label "CO2 emission per unit of value added" ;
+    skos:definition "Indicator 9.4.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020120 a owl:Class ;
-    rdfs:label "SDG Indicator 9.5.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Research and development expenditure as a proportion of GDP" .
+    rdfs:label "Research and development expenditure as a proportion of GDP" ;
+    skos:definition "Indicator 9.5.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020121 a owl:Class ;
-    rdfs:label "SDG Indicator 9.5.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Researchers (in full-time equivalent) per million inhabitants" .
+    rdfs:label "Researchers (in full-time equivalent) per million inhabitants" ;
+    skos:definition "Indicator 9.5.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020122 a owl:Class ;
-    rdfs:label "SDG Indicator 9.a.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Total official international support (official development assistance plus other official flows) to infrastructure" .
+    rdfs:label "Total official international support (official development assistance plus other official flows) to infrastructure" ;
+    skos:definition "Indicator 9.a.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020123 a owl:Class ;
-    rdfs:label "SDG Indicator 9.b.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of medium and high-tech industry value added in total value added" .
+    rdfs:label "Proportion of medium and high-tech industry value added in total value added" ;
+    skos:definition "Indicator 9.b.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020124 a owl:Class ;
-    rdfs:label "SDG Indicator 9.c.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of population covered by a mobile network, by technology" .
+    rdfs:label "Proportion of population covered by a mobile network, by technology" ;
+    skos:definition "Indicator 9.c.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020125 a owl:Class ;
-    rdfs:label "SDG Indicator 10.1.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Growth rates of household expenditure or income per capita among the bottom 40 per cent of the population and the total population" .
+    rdfs:label "Growth rates of household expenditure or income per capita among the bottom 40 per cent of the population and the total population" ;
+    skos:definition "Indicator 10.1.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020126 a owl:Class ;
+    rdfs:label "Proportion of people living below 50 per cent of median income, by sex, age and persons with disabilities" ;
+    skos:definition "Indicator 10.2.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020127 a owl:Class ;
+    rdfs:label "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law" ;
+    skos:definition "Indicator 10.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020128 a owl:Class ;
-    rdfs:label "SDG Indicator 10.4.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Labour share of GDP, comprising wages and social protection transfers" .
+    rdfs:label "Labour share of GDP, comprising wages and social protection transfers" ;
+    skos:definition "Indicator 10.4.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020129 a owl:Class ;
-    rdfs:label "SDG Indicator 10.5.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Financial Soundness Indicators" .
+    rdfs:label "Financial Soundness Indicators" ;
+    skos:definition "Indicator 10.5.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020130 a owl:Class ;
-    rdfs:label "SDG Indicator 10.6.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of members and voting rights of developing countries in international organizations" .
+    rdfs:label "Proportion of members and voting rights of developing countries in international organizations" ;
+    skos:definition "Indicator 10.6.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020131 a owl:Class ;
+    rdfs:label "Recruitment cost borne by employee as a proportion of yearly income earned in country of destination" ;
+    skos:definition "Indicator 10.7.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020132 a owl:Class ;
+    rdfs:label "Number of countries that have implemented well-managed migration policies" ;
+    skos:definition "Indicator 10.7.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020133 a owl:Class ;
-    rdfs:label "SDG Indicator 10.a.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of tariff lines applied to imports from least developed countries and developing countries with zero-tariff" .
+    rdfs:label "Proportion of tariff lines applied to imports from least developed countries and developing countries with zero-tariff" ;
+    skos:definition "Indicator 10.a.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020134 a owl:Class ;
-    rdfs:label "SDG Indicator 10.b.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Total resource flows for development, by recipient and donor countries and type of flow (e.g. official development assistance, foreign direct investment and other flows)" .
+    rdfs:label "Total resource flows for development, by recipient and donor countries and type of flow (e.g. official development assistance, foreign direct investment and other flows)" ;
+    skos:definition "Indicator 10.b.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020135 a owl:Class ;
-    rdfs:label "SDG Indicator 10.c.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Remittance costs as a proportion of the amount remitted" .
+    rdfs:label "Remittance costs as a proportion of the amount remitted" ;
+    skos:definition "Indicator 10.c.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020136 a owl:Class ;
-    rdfs:label "SDG Indicator 11.1.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of urban population living in slums, informal settlements or inadequate housing" .
+    rdfs:label "Proportion of urban population living in slums, informal settlements or inadequate housing" ;
+    skos:definition "Indicator 11.1.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020137 a owl:Class ;
+    rdfs:label "Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities" ;
+    skos:definition "Indicator 11.2.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020138 a owl:Class ;
+    rdfs:label "Ratio of land consumption rate to population growth rate" ;
+    skos:definition "Indicator 11.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020139 a owl:Class ;
+    rdfs:label "Proportion of cities with a direct participation structure of civil society in urban planning and management that operate regularly and democratically" ;
+    skos:definition "Indicator 11.3.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020140 a owl:Class ;
+    rdfs:label "Total expenditure (public and private) per capita spent on the preservation, protection and conservation of all cultural and natural heritage, by type of heritage (cultural, natural, mixed and World Heritage Centre designation), level of government (national, regional and local/municipal), type of expenditure (operating expenditure/investment) and type of private funding (donations in kind, private non-profit sector and sponsorship)" ;
+    skos:definition "Indicator 11.4.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020141 a owl:Class ;
-    rdfs:label "SDG Indicator 11.5.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Direct economic loss in relation to global GDP, damage to critical infrastructure and number of disruptions to basic services, attributed to disasters" .
+    rdfs:label "Direct economic loss in relation to global GDP, damage to critical infrastructure and number of disruptions to basic services, attributed to disasters" ;
+    skos:definition "Indicator 11.5.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020142 a owl:Class ;
-    rdfs:label "SDG Indicator 11.6.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of urban solid waste regularly collected and with adequate final discharge out of total urban solid waste generated, by cities" .
+    rdfs:label "Proportion of urban solid waste regularly collected and with adequate final discharge out of total urban solid waste generated, by cities" ;
+    skos:definition "Indicator 11.6.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020143 a owl:Class ;
-    rdfs:label "SDG Indicator 11.6.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Annual mean levels of fine particulate matter (e.g. PM2.5 and PM10) in cities (population weighted)" .
+    rdfs:label "Annual mean levels of fine particulate matter (e.g. PM2.5 and PM10) in cities (population weighted)" ;
+    skos:definition "Indicator 11.6.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020144 a owl:Class ;
+    rdfs:label "Average share of the built-up area of cities that is open space for public use for all, by sex, age and persons with disabilities" ;
+    skos:definition "Indicator 11.7.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020145 a owl:Class ;
+    rdfs:label "Proportion of persons victim of physical or sexual harassment, by sex, age, disability status and place of occurrence, in the previous 12 months" ;
+    skos:definition "Indicator 11.7.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020146 a owl:Class ;
+    rdfs:label "Proportion of population living in cities that implement urban and regional development plans integrating population projections and resource needs, by size of city" ;
+    skos:definition "Indicator 11.a.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020147 a owl:Class ;
+    rdfs:label "Proportion of financial support to the least developed countries that is allocated to the construction and retrofitting of sustainable, resilient and resource-efficient buildings utilizing local materials" ;
+    skos:definition "Indicator 11.c.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020148 a owl:Class ;
-    rdfs:label "SDG Indicator 12.1.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Number of countries with sustainable consumption and production (SCP) national action plans or SCP mainstreamed as a priority or a target into national policies" .
+    rdfs:label "Number of countries with sustainable consumption and production (SCP) national action plans or SCP mainstreamed as a priority or a target into national policies" ;
+    skos:definition "Indicator 12.1.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020149 a owl:Class ;
+    rdfs:label "Global food loss index" ;
+    skos:definition "Indicator 12.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020150 a owl:Class ;
-    rdfs:label "SDG Indicator 12.4.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Number of parties to international multilateral environmental agreements on hazardous waste, and other chemicals that meet their commitments and obligations in transmitting information as required by each relevant agreement" .
+    rdfs:label "Number of parties to international multilateral environmental agreements on hazardous waste, and other chemicals that meet their commitments and obligations in transmitting information as required by each relevant agreement" ;
+    skos:definition "Indicator 12.4.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020151 a owl:Class ;
+    rdfs:label "Hazardous waste generated per capita and proportion of hazardous waste treated, by type of treatment" ;
+    skos:definition "Indicator 12.4.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020152 a owl:Class ;
+    rdfs:label "National recycling rate, tons of material recycled" ;
+    skos:definition "Indicator 12.5.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020153 a owl:Class ;
+    rdfs:label "Number of companies publishing sustainability reports" ;
+    skos:definition "Indicator 12.6.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020154 a owl:Class ;
+    rdfs:label "Number of countries implementing sustainable public procurement policies and action plans" ;
+    skos:definition "Indicator 12.7.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020155 a owl:Class ;
+    rdfs:label "Extent to which (i) global citizenship education and (ii) education for sustainable development (including climate change education) are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment" ;
+    skos:definition "Indicator 12.8.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020156 a owl:Class ;
+    rdfs:label "Amount of support to developing countries on research and development for sustainable consumption and production and environmentally sound technologies" ;
+    skos:definition "Indicator 12.a.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020157 a owl:Class ;
+    rdfs:label "Number of sustainable tourism strategies or policies and implemented action plans with agreed monitoring and evaluation tools" ;
+    skos:definition "Indicator 12.b.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020158 a owl:Class ;
-    rdfs:label "SDG Indicator 12.c.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Amount of fossil-fuel subsidies per unit of GDP (production and consumption) and as a proportion of total national expenditure on fossil fuels" .
+    rdfs:label "Amount of fossil-fuel subsidies per unit of GDP (production and consumption) and as a proportion of total national expenditure on fossil fuels" ;
+    skos:definition "Indicator 12.c.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020159 a owl:Class ;
+    rdfs:label "Number of countries that have communicated the establishment or operationalization of an integrated policy/strategy/plan which increases their ability to adapt to the adverse impacts of climate change, and foster climate resilience and low greenhouse gas emissions development in a manner that does not threaten food production (including a national adaptation plan, nationally determined contribution, national communication, biennial update report or other)" ;
+    skos:definition "Indicator 13.2.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020160 a owl:Class ;
+    rdfs:label "Number of countries that have integrated mitigation, adaptation, impact reduction and early warning into primary, secondary and tertiary curricula" ;
+    skos:definition "Indicator 13.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020161 a owl:Class ;
+    rdfs:label "Number of countries that have communicated the strengthening of institutional, systemic and individual capacity-building to implement adaptation, mitigation and technology transfer, and development actions" ;
+    skos:definition "Indicator 13.3.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020162 a owl:Class ;
+    rdfs:label "Mobilized amount of United States dollars per year between 2020 and 2025 accountable towards the $100 billion commitment" ;
+    skos:definition "Indicator 13.a.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020163 a owl:Class ;
+    rdfs:label "Number of least developed countries and small island developing States that are receiving specialized support, and amount of support, including finance, technology and capacity-building, for mechanisms for raising capacities for effective climate change-related planning and management, including focusing on women, youth and local and marginalized communities" ;
+    skos:definition "Indicator 13.b.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020164 a owl:Class ;
+    rdfs:label "Index of coastal eutrophication and floating plastic debris density" ;
+    skos:definition "Indicator 14.1.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020165 a owl:Class ;
+    rdfs:label "Proportion of national exclusive economic zones managed using ecosystem-based approaches" ;
+    skos:definition "Indicator 14.2.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020166 a owl:Class ;
+    rdfs:label "Average marine acidity (pH) measured at agreed suite of representative sampling stations" ;
+    skos:definition "Indicator 14.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020167 a owl:Class ;
-    rdfs:label "SDG Indicator 14.4.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of fish stocks within biologically sustainable levels" .
+    rdfs:label "Proportion of fish stocks within biologically sustainable levels" ;
+    skos:definition "Indicator 14.4.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020168 a owl:Class ;
-    rdfs:label "SDG Indicator 14.5.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Coverage of protected areas in relation to marine areas" .
+    rdfs:label "Coverage of protected areas in relation to marine areas" ;
+    skos:definition "Indicator 14.5.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020169 a owl:Class ;
-    rdfs:label "SDG Indicator 14.6.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Degree of implementation of international instruments aiming to combat illegal, unreported and unregulated fishing" .
+    rdfs:label "Progress by countries in the degree of implementation of international instruments aiming to combat illegal, unreported and unregulated fishing" ;
+    skos:definition "Indicator 14.6.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020170 a owl:Class ;
+    rdfs:label "Sustainable fisheries as a proportion of GDP in small island developing States, least developed countries and all countries" ;
+    skos:definition "Indicator 14.7.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020171 a owl:Class ;
-    rdfs:label "SDG Indicator 14.a.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of total research budget allocated to research in the field of marine technology" .
+    rdfs:label "Proportion of total research budget allocated to research in the field of marine technology" ;
+    skos:definition "Indicator 14.a.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020172 a owl:Class ;
-    rdfs:label "SDG Indicator 14.b.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Degree of application of a legal/regulatory/policy/institutional framework which recognizes and protects access rights for small‐scale fisheries" .
+    rdfs:label "Progress by countries in the degree of application of a legal/regulatory/policy/institutional framework which recognizes and protects access rights for small-scale fisheries" ;
+    skos:definition "Indicator 14.b.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020173 a owl:Class ;
+    rdfs:label "Number of countries making progress in ratifying, accepting and implementing through legal, policy and institutional frameworks, ocean-related instruments that implement international law, as reflected in the United Nation Convention on the Law of the Sea, for the conservation and sustainable use of the oceans and their resources" ;
+    skos:definition "Indicator 14.c.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020174 a owl:Class ;
-    rdfs:label "SDG Indicator 15.1.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Forest area as a proportion of total land area" .
+    rdfs:label "Forest area as a proportion of total land area" ;
+    skos:definition "Indicator 15.1.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020175 a owl:Class ;
-    rdfs:label "SDG Indicator 15.1.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type" .
+    rdfs:label "Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type" ;
+    skos:definition "Indicator 15.1.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020176 a owl:Class ;
-    rdfs:label "SDG Indicator 15.2.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Progress towards sustainable forest management" .
+    rdfs:label "Progress towards sustainable forest management" ;
+    skos:definition "Indicator 15.2.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020177 a owl:Class ;
-    rdfs:label "SDG Indicator 15.3.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of land that is degraded over total land area" .
+    rdfs:label "Proportion of land that is degraded over total land area" ;
+    skos:definition "Indicator 15.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020178 a owl:Class ;
-    rdfs:label "SDG Indicator 15.4.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Coverage by protected areas of important sites for mountain biodiversity" .
+    rdfs:label "Coverage by protected areas of important sites for mountain biodiversity" ;
+    skos:definition "Indicator 15.4.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020179 a owl:Class ;
-    rdfs:label "SDG Indicator 15.4.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Mountain Green Cover Index" .
+    rdfs:label "Mountain Green Cover Index" ;
+    skos:definition "Indicator 15.4.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020180 a owl:Class ;
-    rdfs:label "SDG Indicator 15.5.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Red List Index" .
+    rdfs:label "Red List Index" ;
+    skos:definition "Indicator 15.5.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020181 a owl:Class ;
-    rdfs:label "SDG Indicator 15.6.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Number of countries that have adopted legislative, administrative and policy frameworks to ensure fair and equitable sharing of benefits" .
+    rdfs:label "Number of countries that have adopted legislative, administrative and policy frameworks to ensure fair and equitable sharing of benefits" ;
+    skos:definition "Indicator 15.6.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020182 a owl:Class ;
+    rdfs:label "Proportion of traded wildlife that was poached or illicitly trafficked" ;
+    skos:definition "Indicator 15.7.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020183 a owl:Class ;
+    rdfs:label "Proportion of countries adopting relevant national legislation and adequately resourcing the prevention or control of invasive alien species" ;
+    skos:definition "Indicator 15.8.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020184 a owl:Class ;
+    rdfs:label "Progress towards national targets established in accordance with Aichi Biodiversity Target 2 of the Strategic Plan for Biodiversity 2011-2020" ;
+    skos:definition "Indicator 15.9.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020185 a owl:Class ;
-    rdfs:label "SDG Indicator 15.a.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems" .
+    rdfs:label "Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems" ;
+    skos:definition "Indicator 15.a.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020186 a owl:Class ;
-    rdfs:label "SDG Indicator 16.1.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Number of victims of intentional homicide per 100,000 population, by sex and age" .
+    rdfs:label "Number of victims of intentional homicide per 100,000 population, by sex and age" ;
+    skos:definition "Indicator 16.1.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020187 a owl:Class ;
+    rdfs:label "Conflict-related deaths per 100,000 population, by sex, age and cause" ;
+    skos:definition "Indicator 16.1.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020188 a owl:Class ;
-    rdfs:label "SDG Indicator 16.1.3" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of population subjected to (a) physical violence, (b) psychological violence and (c) sexual violence in the previous 12 months" .
+    rdfs:label "Proportion of population subjected to physical, psychological or sexual violence in the previous 12 months" ;
+    skos:definition "Indicator 16.1.3" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020189 a owl:Class ;
-    rdfs:label "SDG Indicator 16.1.4" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of population that feel safe walking alone around the area they live" .
+    rdfs:label "Proportion of population that feel safe walking alone around the area they live" ;
+    skos:definition "Indicator 16.1.4" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020190 a owl:Class ;
-    rdfs:label "SDG Indicator 16.2.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of children aged 1-17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month" .
+    rdfs:label "Proportion of children aged 1-17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month" ;
+    skos:definition "Indicator 16.2.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020191 a owl:Class ;
-    rdfs:label "SDG Indicator 16.2.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Number of victims of human trafficking per 100,000 population, by sex, age and form of exploitation" .
+    rdfs:label "Number of victims of human trafficking per 100,000 population, by sex, age and form of exploitation" ;
+    skos:definition "Indicator 16.2.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020192 a owl:Class ;
-    rdfs:label "SDG Indicator 16.2.3" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of young women and men aged 18‑29 years who experienced sexual violence by age 18" .
+    rdfs:label "Proportion of young women and men aged 18‑29 years who experienced sexual violence by age 18" ;
+    skos:definition "Indicator 16.2.3" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020193 a owl:Class ;
-    rdfs:label "SDG Indicator 16.3.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "roportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms" .
+    rdfs:label "Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms" ;
+    skos:definition "Indicator 16.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020194 a owl:Class ;
-    rdfs:label "SDG Indicator 16.3.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Unsentenced detainees as a proportion of overall prison population" .
+    rdfs:label "Unsentenced detainees as a proportion of overall prison population" ;
+    skos:definition "Indicator 16.3.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020195 a owl:Class ;
+    rdfs:label "Total value of inward and outward illicit financial flows (in current United States dollars)" ;
+    skos:definition "Indicator 16.4.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020196 a owl:Class ;
+    rdfs:label "Proportion of seized, found or surrendered arms whose illicit origin or context has been traced or established by a competent authority in line with international instruments" ;
+    skos:definition "Indicator 16.4.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020197 a owl:Class ;
-    rdfs:label "SDG Indicator 16.5.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of persons who had at least one contact with a public official and who paid a bribe to a public official, or were asked for a bribe by those public officials, during the previous 12 months" .
+    rdfs:label "Proportion of persons who had at least one contact with a public official and who paid a bribe to a public official, or were asked for a bribe by those public officials, during the previous 12 months" ;
+    skos:definition "Indicator 16.5.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020198 a owl:Class ;
-    rdfs:label "SDG Indicator 16.5.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of businesses that had at least one contact with a public official and that paid a bribe to a public official, or were asked for a bribe by those public officials during the previous 12 months" .
+    rdfs:label "Proportion of businesses that had at least one contact with a public official and that paid a bribe to a public official, or were asked for a bribe by those public officials during the previous 12 months" ;
+    skos:definition "Indicator 16.5.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020199 a owl:Class ;
-    rdfs:label "SDG Indicator 16.6.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Primary government expenditures as a proportion of original approved budget, by sector (or by budget codes or similar)" .
+    rdfs:label "Primary government expenditures as a proportion of original approved budget, by sector (or by budget codes or similar)" ;
+    skos:definition "Indicator 16.6.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020200 a owl:Class ;
+    rdfs:label "Proportion of population satisfied with their last experience of public services" ;
+    skos:definition "Indicator 16.6.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020201 a owl:Class ;
+    rdfs:label "Proportions of positions (by sex, age, persons with disabilities and population groups) in public institutions (national and local legislatures, public service, and judiciary) compared to national distributions" ;
+    skos:definition "Indicator 16.7.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020202 a owl:Class ;
+    rdfs:label "Proportion of population who believe decision-making is inclusive and responsive, by sex, age, disability and population group" ;
+    skos:definition "Indicator 16.7.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020203 a owl:Class ;
-    rdfs:label "SDG Indicator 16.9.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of children under 5 years of age whose births have been registered with a civil authority, by age" .
+    rdfs:label "Proportion of children under 5 years of age whose births have been registered with a civil authority, by age" ;
+    skos:definition "Indicator 16.9.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020204 a owl:Class ;
-    rdfs:label "SDG Indicator 16.10.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 months" .
+    rdfs:label "Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 months" ;
+    skos:definition "Indicator 16.10.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020205 a owl:Class ;
-    rdfs:label "SDG Indicator 16.10.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Number of countries that adopt and implement constitutional, statutory and/or policy guarantees for public access to information" .
+    rdfs:label "Number of countries that adopt and implement constitutional, statutory and/or policy guarantees for public access to information" ;
+    skos:definition "Indicator 16.10.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020206 a owl:Class ;
-    rdfs:label "SDG Indicator 16.a.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Existence of independent national human rights institutions in compliance with the Paris Principles" .
+    rdfs:label "Existence of independent national human rights institutions in compliance with the Paris Principles" ;
+    skos:definition "Indicator 16.a.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020207 a owl:Class ;
-    rdfs:label "SDG Indicator 17.1.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Total government revenue as a proportion of GDP, by source" .
+    rdfs:label "Total government revenue as a proportion of GDP, by source" ;
+    skos:definition "Indicator 17.1.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020208 a owl:Class ;
-    rdfs:label "SDG Indicator 17.1.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of domestic budget funded by domestic taxes" .
+    rdfs:label "Proportion of domestic budget funded by domestic taxes" ;
+    skos:definition "Indicator 17.1.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020209 a owl:Class ;
-    rdfs:label "SDG Indicator 17.2.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Net official development assistance, total and to least developed countries, as a proportion of the Organization for Economic Cooperation and Development (OECD) Development Assistance Committee donors’ gross national income (GNI)" .
+    rdfs:label "Net official development assistance, total and to least developed countries, as a proportion of the Organization for Economic Cooperation and Development (OECD) Development Assistance Committee donors’ gross national income (GNI)" ;
+    skos:definition "Indicator 17.2.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020210 a owl:Class ;
+    rdfs:label "Foreign direct investments (FDI), official development assistance and South-South Cooperation as a proportion of total domestic budget" ;
+    skos:definition "Indicator 17.3.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020211 a owl:Class ;
-    rdfs:label "SDG Indicator 17.3.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Volume of remittances (in United States dollars) as a proportion of total GDP" .
+    rdfs:label "Volume of remittances (in United States dollars) as a proportion of total GDP" ;
+    skos:definition "Indicator 17.3.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020212 a owl:Class ;
-    rdfs:label "SDG Indicator 17.4.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Debt service as a proportion of exports of goods and services" .
+    rdfs:label "Debt service as a proportion of exports of goods and services" ;
+    skos:definition "Indicator 17.4.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020213 a owl:Class ;
+    rdfs:label "Number of countries that adopt and implement investment promotion regimes for least developed countries" ;
+    skos:definition "Indicator 17.5.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020214 a owl:Class ;
+    rdfs:label "Number of science and/or technology cooperation agreements and programmes between countries, by type of cooperation" ;
+    skos:definition "Indicator 17.6.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020215 a owl:Class ;
-    rdfs:label "SDG Indicator 17.6.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Fixed Internet broadband subscriptions per 100 inhabitants, by speed" .
+    rdfs:label "Fixed Internet broadband subscriptions per 100 inhabitants, by speed" ;
+    skos:definition "Indicator 17.6.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020216 a owl:Class ;
+    rdfs:label "Total amount of approved funding for developing countries to promote the development, transfer, dissemination and diffusion of environmentally sound technologies" ;
+    skos:definition "Indicator 17.7.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020217 a owl:Class ;
-    rdfs:label "SDG Indicator 17.8.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of individuals using the Internet" .
+    rdfs:label "Proportion of individuals using the Internet" ;
+    skos:definition "Indicator 17.8.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020218 a owl:Class ;
-    rdfs:label "SDG Indicator 17.9.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Dollar value of financial and technical assistance (including through North-South, South-South and triangular cooperation) committed to developing countries" .
+    rdfs:label "Dollar value of financial and technical assistance (including through North-South, South-South and triangular cooperation) committed to developing countries" ;
+    skos:definition "Indicator 17.9.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020219 a owl:Class ;
-    rdfs:label "SDG Indicator 17.10.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Worldwide weighted tariff-average" .
+    rdfs:label "Worldwide weighted tariff-average" ;
+    skos:definition "Indicator 17.10.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020220 a owl:Class ;
-    rdfs:label "SDG Indicator 17.11.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Developing countries’ and least developed countries’ share of global exports" .
+    rdfs:label "Developing countries’ and least developed countries’ share of global exports" ;
+    skos:definition "Indicator 17.11.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020221 a owl:Class ;
-    rdfs:label "SDG Indicator 17.12.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Average tariffs faced by developing countries, least developed countries and small island developing States" .
+    rdfs:label "Average tariffs faced by developing countries, least developed countries and small island developing States" ;
+    skos:definition "Indicator 17.12.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020222 a owl:Class ;
+    rdfs:label "Macroeconomic Dashboard" ;
+    skos:definition "Indicator 17.13.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020223 a owl:Class ;
+    rdfs:label "Number of countries with mechanisms in place to enhance policy coherence of sustainable development" ;
+    skos:definition "Indicator 17.14.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020224 a owl:Class ;
-    rdfs:label "SDG Indicator 17.15.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Extent of use of country-owned results frameworks and planning tools by providers of development cooperation" .
+    rdfs:label "Extent of use of country-owned results frameworks and planning tools by providers of development cooperation" ;
+    skos:definition "Indicator 17.15.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020225 a owl:Class ;
-    rdfs:label "SDG Indicator 17.16.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Number of countries reporting progress in multi-stakeholder development effectiveness monitoring frameworks that support the achievement of the sustainable development goals" .
+    rdfs:label "Number of countries reporting progress in multi-stakeholder development effectiveness monitoring frameworks that support the achievement of the sustainable development goals" ;
+    skos:definition "Indicator 17.16.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020226 a owl:Class ;
+    rdfs:label "Amount of United States dollars committed to public-private and civil society partnerships" ;
+    skos:definition "Indicator 17.17.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
+sdg:SDGIO_00020227 a owl:Class ;
+    rdfs:label "Proportion of sustainable development indicators produced at the national level with full disaggregation when relevant to the target, in accordance with the Fundamental Principles of Official Statistics" ;
+    skos:definition "Indicator 17.18.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020228 a owl:Class ;
-    rdfs:label "SDG Indicator 17.18.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Number of countries that have national statistical legislation that complies with the Fundamental Principles of Official Statistics" .
+    rdfs:label "Number of countries that have national statistical legislation that complies with the Fundamental Principles of Official Statistics" ;
+    skos:definition "Indicator 17.18.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020229 a owl:Class ;
-    rdfs:label "SDG Indicator 17.18.3" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Number of countries with a national statistical plan that is fully funded and under implementation, by source of funding" .
+    rdfs:label "Number of countries with a national statistical plan that is fully funded and under implementation, by source of funding" ;
+    skos:definition "Indicator 17.18.3" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020230 a owl:Class ;
-    rdfs:label "SDG Indicator 17.19.1" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Dollar value of all resources made available to strengthen statistical capacity in developing countries" .
+    rdfs:label "Dollar value of all resources made available to strengthen statistical capacity in developing countries" ;
+    skos:definition "Indicator 17.19.1" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 sdg:SDGIO_00020231 a owl:Class ;
-    rdfs:label "SDG Indicator 17.19.2" ;
-    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> ;
-    skos:definition "Proportion of countries that (a) have conducted at least one population and housing census in the last 10 years; and (b) have achieved 100 per cent birth registration and 80 per cent death registration" .
+    rdfs:label "Proportion of countries that (a) have conducted at least one population and housing census in the last 10 years; and (b) have achieved 100 per cent birth registration and 80 per cent death registration" ;
+    skos:definition "Indicator 17.19.2" ;
+    rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
