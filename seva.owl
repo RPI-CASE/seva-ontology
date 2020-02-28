@@ -628,7 +628,7 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_0103 a owl:Class;
      rdfs:label "Indicator 103" ;
-     skos:definition "Life expectancy at birth, both sexes " ;
+     skos:definition "Life expectancy at birth, both sexes" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0104 a owl:Class;
@@ -833,7 +833,7 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_0144 a owl:Class;
      rdfs:label "Indicator 144" ;
-     skos:definition "Municipal water withdrawal, % " ;
+     skos:definition "Municipal water withdrawal, %" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0145 a owl:Class;
@@ -1613,7 +1613,7 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_0307 a owl:Class;
      rdfs:label "Indicator 307" ;
-     skos:definition "Income/consumption of poorest quintile (lowest 20%) " ;
+     skos:definition "Income/consumption of poorest quintile (lowest 20%)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0308 a owl:Class;
@@ -1628,22 +1628,22 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_0310 a owl:Class;
      rdfs:label "Indicator 310" ;
-     skos:definition "Income/consumption of second richest quintile (fourth 20%) " ;
+     skos:definition "Income/consumption of second richest quintile (fourth 20%)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0311 a owl:Class;
      rdfs:label "Indicator 311" ;
-     skos:definition "Income/consumption of richest quintile (highest 20%) " ;
+     skos:definition "Income/consumption of richest quintile (highest 20%)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0312 a owl:Class;
      rdfs:label "Indicator 312" ;
-     skos:definition "Income/consumption of poorest decile (lowest 10%) " ;
+     skos:definition "Income/consumption of poorest decile (lowest 10%)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0313 a owl:Class;
      rdfs:label "Indicator 313" ;
-     skos:definition "Income/consumption of richest decile (highestest 10%) " ;
+     skos:definition "Income/consumption of richest decile (highestest 10%)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0314 a owl:Class;
@@ -1673,7 +1673,7 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_0319 a owl:Class;
      rdfs:label "Indicator 319" ;
-     skos:definition "Graduates (tertiary) from science, technology, engineering and mathematics programmes " ;
+     skos:definition "Graduates (tertiary) from science, technology, engineering and mathematics programmes" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0320 a owl:Class;
@@ -2513,7 +2513,7 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_0494 a owl:Class;
      rdfs:label "Indicator 494" ;
-     skos:definition "Natural disasters, meteorological, deaths/million " ;
+     skos:definition "Natural disasters, meteorological, deaths/million" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0495 a owl:Class;
@@ -2628,7 +2628,7 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_0517 a owl:Class;
      rdfs:label "Indicator 517" ;
-     skos:definition "Technological disasters, deaths/million " ;
+     skos:definition "Technological disasters, deaths/million" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0518 a owl:Class;
@@ -2738,7 +2738,7 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_0539 a owl:Class;
      rdfs:label "Indicator 539" ;
-     skos:definition "Gross Domestic Product in current prices " ;
+     skos:definition "Gross Domestic Product in current prices" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0548 a owl:Class;
@@ -2793,12 +2793,12 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_0558 a owl:Class;
      rdfs:label "Indicator 558" ;
-     skos:definition "Gross Domestic Product in current prices " ;
+     skos:definition "Gross Domestic Product in current prices" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0559 a owl:Class;
      rdfs:label "Indicator 559" ;
-     skos:definition "Gross domestic investment rate in current prices " ;
+     skos:definition "Gross domestic investment rate in current prices" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0560 a owl:Class;
@@ -3958,27 +3958,27 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_0863 a owl:Class;
      rdfs:label "Indicator 863" ;
-     skos:definition "Material footprint (Biomass)  " ;
+     skos:definition "Material footprint (Biomass)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0864 a owl:Class;
      rdfs:label "Indicator 864" ;
-     skos:definition "Material footprint (Fossil fuels)  " ;
+     skos:definition "Material footprint (Fossil fuels)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0865 a owl:Class;
      rdfs:label "Indicator 865" ;
-     skos:definition "Material footprint (Metal ores)  " ;
+     skos:definition "Material footprint (Metal ores)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0866 a owl:Class;
      rdfs:label "Indicator 866" ;
-     skos:definition "Material footprint (Non-metallic minerals)  " ;
+     skos:definition "Material footprint (Non-metallic minerals)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0867 a owl:Class;
      rdfs:label "Indicator 867" ;
-     skos:definition "Material Footprint (Total) " ;
+     skos:definition "Material Footprint (Total)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0869 a owl:Class;
@@ -4568,12 +4568,12 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_0990 a owl:Class;
      rdfs:label "Indicator 990" ;
-     skos:definition "Household air pollution deaths, male, Total (number) " ;
+     skos:definition "Household air pollution deaths, male, Total (number)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0991 a owl:Class;
      rdfs:label "Indicator 991" ;
-     skos:definition "Household air pollution deaths, female, Total (number) " ;
+     skos:definition "Household air pollution deaths, female, Total (number)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_0992 a owl:Class;
@@ -4778,17 +4778,17 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_1032 a owl:Class;
      rdfs:label "Indicator 1032" ;
-     skos:definition "Population using at least basic sanitation services, rural " ;
+     skos:definition "Population using at least basic sanitation services, rural" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_1033 a owl:Class;
      rdfs:label "Indicator 1033" ;
-     skos:definition "Population using at least basic sanitation services, urban " ;
+     skos:definition "Population using at least basic sanitation services, urban" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_1034 a owl:Class;
      rdfs:label "Indicator 1034" ;
-     skos:definition "Population using at least basic sanitation services, total " ;
+     skos:definition "Population using at least basic sanitation services, total" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_1035 a owl:Class;
@@ -4868,7 +4868,7 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_1050 a owl:Class;
      rdfs:label "Indicator 1050" ;
-     skos:definition "Received payments for agricultural products in the past year, male (% age 15+) " ;
+     skos:definition "Received payments for agricultural products in the past year, male (% age 15+)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_1051 a owl:Class;
@@ -6583,8 +6583,7 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_1424 a owl:Class;
      rdfs:label "Indicator 1424" ;
-     skos:definition "Nationally derived extend of rivers, km2
-" ;
+     skos:definition "Nationally derived extend of rivers, km2" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_1425 a owl:Class;
@@ -6684,7 +6683,7 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_1445 a owl:Class;
      rdfs:label "Indicator 1445" ;
-     skos:definition "Net Food production index (2004-2006 = 100) " ;
+     skos:definition "Net Food production index (2004-2006 = 100)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_1446 a owl:Class;
@@ -7609,7 +7608,7 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_3609 a owl:Class;
      rdfs:label "Indicator 3609" ;
-     skos:definition "Proportion of safely treated domestic wastewater flows, % (SDG 6.3.1) " ;
+     skos:definition "Proportion of safely treated domestic wastewater flows, % (SDG 6.3.1)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_3610 a owl:Class;
@@ -7729,7 +7728,7 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_3705 a owl:Class;
      rdfs:label "Indicator 3705" ;
-     skos:definition "Average marine acidity (pH) (SDG 14.3.1) " ;
+     skos:definition "Average marine acidity (pH) (SDG 14.3.1)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_3715 a owl:Class;
@@ -7899,7 +7898,7 @@ obo:ENVO_00010483 a owl:Class ;
 
 :Indicator_3860 a owl:Class;
      rdfs:label "Indicator 3860" ;
-     skos:definition "Amount of approved funding for developing countries environmentally sound technologies (SDG 17.7.1) " ;
+     skos:definition "Amount of approved funding for developing countries environmentally sound technologies (SDG 17.7.1)" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
 
 :Indicator_5000 a owl:Class;
@@ -7911,6 +7910,7 @@ obo:ENVO_00010483 a owl:Class ;
      rdfs:label "Indicator 5001" ;
      skos:definition "GDP aggregation" ;
      rdfs:subClassOf <http://purl.org/seva/SDGIndicator> .
+
 
 ###########
 #
