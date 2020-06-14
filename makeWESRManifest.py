@@ -71,7 +71,7 @@ def writeTTL(code, data, fp, country_uris):
         if country_uris[c] == None: continue
 
         format_obj = {"indicator_uri": indicator_uri, "country_uri": country_uris[c]}
-        fp.write("{country_uri} sio:001277 {indicator_uri} .\n\n".format(**format_obj))
+        fp.write("<{country_uri}> sio:001277 {indicator_uri} .\n\n".format(**format_obj))
 
 def main():
     try:
